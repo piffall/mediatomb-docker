@@ -19,11 +19,22 @@ sudo docker stop mediatomb
 ```
 
 ## Systemd (to start up on boot)
+
+### Enable as service
 ```bash
 sudo ln -s ~/mediatomb-docker/mediatomb.service /lib/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl start mediatomb.service
 sudo systemctl enable mediatomb.service
+
+# I need to run this to get it work
+# sudo systemctl reenable mediatomb.service
+```
+
+### Start and stop
+````bash
+sudo service mediatomb start
+sudo service mediatomb stop
 ```
 
 ## Access mediatomb Web UI
