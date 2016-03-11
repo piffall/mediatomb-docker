@@ -22,13 +22,10 @@ sudo docker stop mediatomb
 
 ### Enable as service
 ```bash
-sudo ln -s ~/mediatomb-docker/mediatomb.service /lib/systemd/system/
+sudo cp ~/mediatomb-docker/mediatomb.service /lib/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl start mediatomb.service
 sudo systemctl enable mediatomb.service
-
-# I need to run this to get it work
-# sudo systemctl reenable mediatomb.service
 ```
 
 ### Start and stop

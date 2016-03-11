@@ -4,9 +4,10 @@ Requires=docker.service
 After=docker.service
 
 [Service]
+Type=idle
 Restart=always
 ExecStart=/usr/bin/docker start -a mediatomb
 ExecStop=/usr/bin/docker stop -t 2 mediatomb
 
 [Install]
-WantedBy=local.target
+WantedBy=multi-user.target
