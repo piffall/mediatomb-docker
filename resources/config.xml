@@ -4,7 +4,7 @@
      information on creating and using config.xml configration files.
     -->
   <server>
-    <interface>eth0</interface>
+    <!--<interface>eth0</interface>-->
     <ui enabled="yes" show-tooltips="yes">
       <accounts enabled="no" session-timeout="30">
         <account user="mediatomb" password="mediatomb"/>
