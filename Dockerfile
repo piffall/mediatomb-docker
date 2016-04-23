@@ -21,4 +21,4 @@ USER mediatomb
 
 RUN PATH=/usr/bin:$PATH
 RUN export PATH
-CMD exec /usr/bin/mediatomb -m /etc -f mediatomb -p 50500 
+CMD exec /usr/bin/mediatomb -m /etc -f mediatomb -e $NET_DEV -p 50500
