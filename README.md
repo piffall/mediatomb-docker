@@ -36,3 +36,8 @@ sudo service mediatomb stop
 
 ## Access mediatomb Web UI
 [http://localhost:50500](http://localhost:50500)
+
+## Donations (BTC)
+*Please consider support the project donating to the Bitcoin address below:*
+
+17q6RT31yEJAptrUzXhwEq5iPwEguEFFBG
